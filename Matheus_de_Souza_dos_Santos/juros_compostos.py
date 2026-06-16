@@ -1,3 +1,8 @@
+# M = Montante 
+# C = Capital inicial 
+# i = Taxa de juros 
+# t = Tempo
+
 
 def simular_rendimento(capital, taxa_mensal, meses):
     if capital <= 0 or meses < 0:
@@ -7,4 +12,4 @@ def simular_rendimento(capital, taxa_mensal, meses):
     
     montante = capital * (1 + taxa_decimal) ** meses
     
-    return round(montante, 0)
+    return round(montante, 2)#ajustei o round por que estava arredondando pra zero casas decimais
