@@ -1,12 +1,14 @@
 def contar_letras(palavra):
     resultado = {}
-    for letra in palavra:
-        vogais = 0
-        consoantes = 0
+    vogais = 0
+    consoantes = 0
+
+    for letra in palavra.lower():
         if letra in "aeiou":
-            vogais = vogais + 1
-        else:
-            consoantes = consoantes + 1
+            vogais += 1
+        elif letra.isalpha(): 
+            consoantes += 1
+
     resultado["vogais"] = vogais
     resultado["consoantes"] = consoantes
     return resultado
