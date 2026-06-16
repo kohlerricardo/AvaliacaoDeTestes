@@ -4,9 +4,6 @@ def ct01():
      assert simular_rendimento(1000.0,1.0,12,2) == True, f"True: deu bão piá"
      
 
-print('executando', simular_rendimento(1000.0,1.0,12))
-
-
 
 
 
