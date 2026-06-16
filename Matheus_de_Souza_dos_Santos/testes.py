@@ -2,8 +2,12 @@ from juros_compostos import simular_rendimento
 
 def ct01():
      assert simular_rendimento(1000.0,1.0,12) == 1126.83, "Deu erro"
+
+def ct02():
+     assert simular_rendimento(500.0,2.0,3) == 530.60, "Deu erro"
     
 ct01()
+ct02()
 
 
 
