@@ -1,3 +1,4 @@
+#teste conforme plano_de_teste
 from calculo_media import calcular_situacao_aluno
 
 def teste_aprovado():

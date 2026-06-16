@@ -6,7 +6,7 @@ def calcular_situacao_aluno(nota1, nota2, nota3):
 
     if media >=7.0:
         return "Aprovado"
-
+#retirei o media <=6,9 por que todas notas abaixo de 7 presisa de recuperação.
     elif media > 5.0:
         return "Recuperação"
     else:
