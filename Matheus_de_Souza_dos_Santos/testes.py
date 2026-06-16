@@ -5,9 +5,13 @@ def ct01():
 
 def ct02():
      assert simular_rendimento(500.0,2.0,3) == 530.60, "Deu erro"
+
+def ct03():
+     assert simular_rendimento(1000.0,5.0,0) == 1000.00, "Deu erro"
     
 ct01()
 ct02()
+ct03()
 
 
 
