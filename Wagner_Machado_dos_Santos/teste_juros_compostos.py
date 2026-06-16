@@ -1,4 +1,4 @@
-#  import de funçõa para o teste de juros compostos 
+#  import de função para o teste de juros compostos 
 from juros_compostos import simular_rendimento
 
 # Função para iniciar os testes conforme cenarios descritos no enunciado do teste
@@ -17,10 +17,6 @@ def testar_juros_compostos():
     resultado = simular_rendimento(1000.0, 5.0, 0)
     assert resultado == 1000.00, f"Erro: Esperado 1000.00, recebido {resultado}"
 
-    #Teste 06 - capital igual a zero
-    resultado = simular_rendimento(0.0, 1.0, 12)
-    assert resultado == 0.00, f"Erro: Esperado 0.00, recebido {resultado}"
-
     # Teste 04 - Capital negativo inserido
     try:
         simular_rendimento(-100.0, 1.0, 12)
@@ -37,4 +33,8 @@ def testar_juros_compostos():
 
     print("Todos os testes passaram com sucesso!")
 
+    #Teste 06 - capital igual a zero
+    resultado = simular_rendimento(0.0, 1.0, 12)
+    assert resultado == 0.00, f"Erro: Esperado 0.00, recebido {resultado}"
+    
 testar_juros_compostos()

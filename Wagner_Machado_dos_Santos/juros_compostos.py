@@ -5,12 +5,12 @@ def simular_rendimento(capital, taxa_mensal, meses):
     if capital < 0 or meses < 0:
         raise ValueError("Valores iniciais não podem negativos.")
     
-    # formula para i ser a taxa mensal em decimal e tornar o calculo em codigo compatível        
+    # formúla para i ser a taxa mensal em decimal e tornar o calcúlo em codigo compatível        
     taxa_decimal = taxa_mensal / 100
     
-    # formula para calcular o montante acumulado com juros compostos em formato de codigo
+    # formúla para calcular o montante acumulado com juros compostos em formato de codigo
     montante = capital * (1 + taxa_decimal) ** meses
     
-    # Mudando de 0 para 2 casas decimais paara ser compativel com o enunciado do teste
+    # Mudando de 0 para 2 casas decimais para ser compatível com o enunciado do teste
 
     return round(montante, 2)
