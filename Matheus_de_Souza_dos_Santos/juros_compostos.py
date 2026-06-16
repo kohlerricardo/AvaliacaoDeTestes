@@ -13,3 +13,8 @@ def simular_rendimento(capital, taxa_mensal, meses):
     montante = capital * (1 + taxa_decimal) ** meses
     
     return round(montante, 2)#ajustei o round por que estava arredondando pra zero casas decimais
+
+# print(simular_rendimento(1000.0,1.0,12))
+# print(simular_rendimento(500.0,2.0,3))
+# # print(simular_rendimento(1000.0,5.0,0))
+# # print(simular_rendimento(-1000.0,1.0,-5))

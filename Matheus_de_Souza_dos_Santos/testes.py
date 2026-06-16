@@ -1,8 +1,9 @@
 from juros_compostos import simular_rendimento
 
 def ct01():
-     assert simular_rendimento(1000.0,1.0,12,2) == True, f"True: deu bão piá"
-     
+     assert simular_rendimento(1000.0,1.0,12) == 1126.83, "Deu erro"
+    
+ct01()
 
 
 
