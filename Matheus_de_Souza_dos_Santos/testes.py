@@ -8,10 +8,14 @@ def ct02():
 
 def ct03():
      assert simular_rendimento(1000.0,5.0,0) == 1000.00, "Deu erro"
+     
+def ct04():
+     assert simular_rendimento(-100.0,5.0,0) == 1000.00, "Deu erro"
     
 ct01()
 ct02()
 ct03()
+ct04()
 
 
 
