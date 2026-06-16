@@ -5,5 +5,5 @@ def simular_rendimento(capital, taxa_mensal, meses):
     taxa_decimal = taxa_mensal / 100
     
     montante = capital * (1 + taxa_decimal) ** meses
-    
-    return round(montante, 0)
+    #mudei o 0 pelo 2, pois o 0 fazia com que os valores "não tivessem casas decimais", arredondando o valor 
+    return round(montante, 2)
