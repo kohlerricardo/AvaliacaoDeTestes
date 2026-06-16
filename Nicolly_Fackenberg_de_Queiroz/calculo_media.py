@@ -4,10 +4,11 @@ def calcular_situacao_aluno(nota1, nota2, nota3):
 
     media = (nota1 * 2 + nota2 + 3 + nota3 * 5) / 3
 
-    if media > 7.0:
+    if media >=7.0:
         return "Aprovado"
 
-    elif media > 5.0 and media <= 6.9:
+    elif media > 5.0:
         return "Recuperação"
     else:
         return "Reprovado"
+    
