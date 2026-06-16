@@ -1,3 +1,4 @@
+
 def simular_rendimento(capital, taxa_mensal, meses):
     if capital <= 0 or meses < 0:
         raise ValueError("Valores iniciais não podem ser nulos ou negativos.")
