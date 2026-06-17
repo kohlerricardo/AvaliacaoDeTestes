@@ -1,9 +1,16 @@
+# Função para calcular o montante acumulado com juros compostos
 def simular_rendimento(capital, taxa_mensal, meses):
-    if capital <= 0 or meses < 0:
-        raise ValueError("Valores iniciais não podem ser nulos ou negativos.")
-        
+
+    # Removido '=' para que capital zero seja aceito normalmente, mas capital negativo e meses negativos não sejam aceitos
+    if capital < 0 or meses < 0:
+        raise ValueError("Valores iniciais não podem negativos.")
+    
+    # formúla para i ser a taxa mensal em decimal e tornar o calcúlo em codigo compatível        
     taxa_decimal = taxa_mensal / 100
     
+    # formúla para calcular o montante acumulado com juros compostos em formato de codigo
     montante = capital * (1 + taxa_decimal) ** meses
     
-    return round(montante, 0)
+    # Mudando de 0 para 2 casas decimais para ser compatível com o enunciado do teste
+
+    return round(montante, 2)
